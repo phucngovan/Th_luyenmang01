@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hello</title>
+</head>
+<body>
+   <script>
+       let arr=[];
+       for (let i = 0; i < 10; i++) {
+           arr.push(Math.floor(Math.random() * 10));
+       }
+       console.log(arr);
+       function sapxepmin(array) {
+           for (let i = 0; i < array.length - 1; i++){
+               for (let j = i + 1; j < array.length; j++) {
+                   if (array[i] < array[j]) {
+                       let conVert = array[i];
+                       array[i] = array[j];
+                       array[j] = conVert;
+                   }
+               }
+           }
+           return arr;
+           
+       } document.write(sapxepmin(arr));
+   </script>
+
+</body>
+</html>
